@@ -135,7 +135,7 @@ class Main extends PluginBase implements Listener
             } else {
                 $effectId = Effect::getEffect($effect[0]);
             }
-            $player->addEffect(new EffectInstance($effectId, 20 * $effect[1] ?? 20, ($effect[2] ?? 2) - 1));
+            $player->addEffect(new EffectInstance($effectId, 20 * (int) $effect[1] ?? 20, ($effect[2] ?? 2) - 1));
         }
 
         $this->players[strtolower($player->getName())] = $effects;
