@@ -43,6 +43,10 @@ class Main extends PluginBase implements Listener
         if (!$entity instanceof Player || $event->isCancelled()) {
             return;
         }
+        
+        if($event->getOldItem()->getId() === $event->getNewItem()->getId()) {
+            return;
+        }
 
         $this->getScheduler()->scheduleDelayedTask(new CheckArmourTask($this, $entity), 1);
     }
