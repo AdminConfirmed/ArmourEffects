@@ -1,0 +1,11 @@
+effects: #list of effect combinations
+  example1: #Name of the effect
+    helmet: 310 #Helmet required to gain the effects
+    chestplate: 311
+    leggings: 312
+    boots: 313
+    message: "&a{name} Effects have been applied!" #Message to send to people when the armour has been applied.
+    needsPermissions: true #Permissions would be armoureffects.effect.example1 for this
+    effects:
+      - speed:60:1 #Effects in order effectId/name:effectTime:effectMultiplier
+      - resistance:3600:1
