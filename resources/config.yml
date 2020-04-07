@@ -4,8 +4,16 @@ effects: #list of effect combinations
     chestplate: 311
     leggings: 312
     boots: 313
-    message: "&a{name} Effects have been applied!" #Message to send to people when the armour has been applied.
+    message: "&a{name} Effects have been applied!" #Message to send to players when the armour has been applied.
     needsPermissions: true #Permissions would be armoureffects.effect.example1 for this
     effects:
       - speed:60:1 #Effects in order effectId/name:effectTime:effectMultiplier
       - resistance:3600:1
+  example2:
+    helmet: 310
+    boots: 309
+    message: "&a{name} Effects have been applied!"
+    needsPermissions: false
+    effects:
+      - strength:300:3
+    
