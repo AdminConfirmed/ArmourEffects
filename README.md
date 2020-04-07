@@ -3,7 +3,7 @@
 Configuration file location: /plugin_data/ArmourEffects/config.yml
 
 | Item | description | type |
-| ------------- |
+| -----|-------------|----- |
 | effects | list of armour combinations | array |
 | helmet | Helmet required to gain effects | int |
 | Chestplate | Chestplate required to gain effects | int |
