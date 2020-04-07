@@ -5,4 +5,5 @@ branches:
 projects:
   ArmourEffects:
     path: ""
+    icon: icon.png
 ...
